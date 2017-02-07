@@ -40,6 +40,7 @@ public class HeroTest {
   @Test(expected = IllegalArgumentException.class)
   public void testMissingProfession() throws Exception {
     new Hero.Builder(null, "Sir without a job");
+    System.out.print("We are making a here here");
   }
 
   /**
@@ -48,6 +49,7 @@ public class HeroTest {
   @Test(expected = IllegalArgumentException.class)
   public void testMissingName() throws Exception {
     new Hero.Builder(Profession.THIEF, null);
+    System.out.print("We are making a thief here");
   }
 
   /**
